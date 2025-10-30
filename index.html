@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+  <script>
+    if (!localStorage.getItem("userIsValidated")) {
+      window.location.replace("/")
+    }
+  </script>
   <body>
     <h1><a href="webretro">webretro</a></h1>
     <h1><a href="chilibowlflash">chilibowlflash</a></h1>
