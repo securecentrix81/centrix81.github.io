@@ -16,6 +16,12 @@
       if (!localStorage.getItem("userIsValidated")) {
         window.location.replace("/")
       }
+      if (Date.now() > 1763135220) {
+        let toRemove = document.querySelectorAll("[remove]")
+        for (let i of toRemove) {
+          if (parseInt(i.getAttribute("remove")) > Date.now()) i.remove()
+        }
+      }
     </script>
   </head>
   <body>
@@ -24,7 +30,7 @@
     <h1><a href="/project-hub">project hub</a></h1>
     <h1><a href="/project-hub-v2">project hub v2 (work in progress)</a></h1>
     <h1><a href="/crazycattle3d">crazy cattle 3d</a></h1>
-    <h1><a href="/turbowarp">turbowarp</a><sup class="newtag">NEW!</sup></h1>
-    <h1><a href="/saharshgobinathclicker">Saharsh Gobinath Clicker</a><sup class="newtag">NEW!</sup></h1>
+    <h1><a href="/turbowarp">turbowarp</a><sup class="newtag" remove="1763135220">NEW!</sup></h1>
+    <h1><a href="/saharshgobinathclicker">Saharsh Gobinath Clicker</a><sup class="newtag" remove="1763135220">NEW!</sup></h1>
   </body>
 </html>
