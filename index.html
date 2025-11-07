@@ -1,17 +1,30 @@
+
 <!DOCTYPE html>
 <html>
-  <script>
-    if (!localStorage.getItem("userIsValidated")) {
-      window.location.replace("/")
-    }
-  </script>
+  <head>
+    <style>
+      .newtag {
+        color: #ff0000;
+        font-size: small;
+        font-weight: normal;
+      }
+      a:visited {
+        color: #0000ff;
+      }
+    </style>
+    <script>
+      if (!localStorage.getItem("userIsValidated")) {
+        window.location.replace("/")
+      }
+    </script>
+  </head>
   <body>
     <h1><a href="/webretro">webretro</a></h1>
     <h1><a href="/chilibowlflash">chilibowlflash</a></h1>
     <h1><a href="/project-hub">project hub</a></h1>
     <h1><a href="/project-hub-v2">project hub v2 (work in progress)</a></h1>
     <h1><a href="/crazycattle3d">crazy cattle 3d</a></h1>
-    <h1><a href="/turbowarp">turbowarp</a></h1>
-    <h1><a href="/saharshgobinathclicker">Saharsh Gobinath Clicker</a></h1>
+    <h1><a href="/turbowarp">turbowarp</a><sup class="newtag">NEW!</sup></h1>
+    <h1><a href="/saharshgobinathclicker">Saharsh Gobinath Clicker</a><sup class="newtag">NEW!</sup></h1>
   </body>
 </html>
